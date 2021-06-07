@@ -1,19 +1,32 @@
 /**
-Global Adversity Project (GAP) is a yield-generating charitable cryptocurrency that runs on the Binance Smart Network. It rewards holders by providing them ‘interest’ on their investment through the contract transaction tax, offering an incentive for investors to hold, rather then participating in day-trading events.
+Global Adversity Project (GAP) is a yield-generating charitable cryptocurrency that runs on the Binance Smart Network. 
+It rewards holders by providing them ‘interest’ on their investment through the contract transaction tax, offering an 
+incentive for investors to hold, rather then participating in day-trading events.
 
-Furthermore, investors will be supporting a Global Charitable Cause, one that seeks to help those who may struggle with a disability, whether it be mental, physical or intellectual based.
+Furthermore, investors will be supporting a Global Charitable Cause, one that seeks to help those who may struggle with 
+a disability, whether it be mental, physical or intellectual based.
  
 Tokenmonic features are a global 8% tax on transfers, buying and selling, which are distrubuted in the following fashion:
-  * 4% added to the liquidity pool and locked forever.
+
+  * 4% added to the liquidity pool, which was burned at launch
   * 4% is redistributed to all holders.
+  * 
+  * 
   * 40% of the supply was burned at launch
   * 2.25% was distributed amongst the core admin team for their investment/involvement.
   * 1% was distributed to a charity wallet
   * 1% was distributed to a marketing wallet
   * 55.75% remained as fair launch supply
+  * 
+  * 
+  * Discord: https://discord.gg/X8tVtw4SMh
+  * Website: http://www.globaladversity.org
+  * Telegram: http://t.me/gapbsc
+  * Twitter: http://www.twitter.com/gapbsc
+  * Reddit: http://www.reddit.com/r/gapbsc
  */
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.12;
 // SPDX-License-Identifier: Unlicensed
 interface IERC20 {
 
@@ -693,7 +706,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 }
 
 
-contract Hive is Context, IERC20, Ownable {
+contract GAP is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
